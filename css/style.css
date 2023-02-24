@@ -1,0 +1,148 @@
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --primary-bg-color: #ffffff;
+  --sec-bg-color: #f4f4fd;
+  --header-bg-color: #e7e9fc;
+  --black-color: #000000;
+  --white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* LOGO */
+.logo {
+  text-decoration: none;
+}
+
+.logo .studio,
+.logo .web {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-family: "Raleway", cursive;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+}
+
+.logo .web {
+  color: var(--accent-color);
+}
+
+/* HEADER NAVIGATION AND CONTACTS */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+.contacts .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* HERO */
+.hero-title {
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* BUTTONS AND FILTERS-BUTTON */
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.filters .link {
+  color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+}
+
+.filters .link:hover,
+.filters .link:active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* SECTIONS */
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* TEAM LIST */
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-list .text {
+  text-align: center;
+}
+
+/* OUR APPROACH */
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* OUR SERVICES */
+.service-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}

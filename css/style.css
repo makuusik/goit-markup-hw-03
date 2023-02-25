@@ -121,7 +121,11 @@ body {
 }
 
 .filters .link {
+  display: inline-block;
   color: var(--accent-color);
+
+  border-radius: 4px;
+  padding: 12px 24px;
 
   font-weight: 500;
   font-size: 16px;
@@ -129,6 +133,14 @@ body {
   letter-spacing: 0.04em;
   border: none;
   cursor: pointer;
+}
+
+.container .service-list {
+  padding-top: 72px;
+}
+
+.container .filters {
+  padding-top: 96px;
 }
 
 .filters .link:hover,
@@ -143,13 +155,13 @@ body {
 }
 
 /* SECTIONS */
-
 .section-title.centered {
   text-align: center;
 }
 
 .section.no-padding {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section-title {
@@ -167,6 +179,11 @@ body {
 
 .section {
   padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-portfolio {
+  padding-top: 0;
   padding-bottom: 120px;
 }
 
@@ -202,13 +219,22 @@ body {
   margin-top: 0;
   margin-bottom: 0px;
 }
+
 /* OUR SERVICES */
 .service-list .title {
+  margin-top: 32px;
+  margin-bottom: 0;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.service-list p {
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 /* FOOTER */

@@ -188,12 +188,17 @@ body {
 }
 
 /* WHAT WE CAN DO */
-.our-work > .item {
-  padding-top: 72px;
+.our-work {
+  display: flex;
 }
 
+.our-work .item + .item {
+  margin-left: 24px;
+}
 /* SECTIONS */
 .section-title.centered {
+  margin-top: 0;
+  margin-bottom: 72px;
   text-align: center;
 }
 
@@ -241,9 +246,14 @@ body {
   margin-bottom: 0;
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* OUR APPROACH */
 .feature-list .title {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 8px;
 
   color: var(--title-text-color);
@@ -255,11 +265,10 @@ body {
 
 .feature-list p {
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
-.container.features {
-  width: 1158px;
+.container.feature {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;

@@ -20,6 +20,7 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* TOOLS */
 .hidden {
   display: none;
 }
@@ -36,12 +37,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 /* PAGE HEADER */
 .page-header {
-  background-color: #ccc;
+  outline: 1px solid tomato;
 }
 
 /* LOGO */
@@ -65,13 +66,55 @@ body {
 }
 
 /* HEADER NAVIGATION AND CONTACTS */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+}
+
+.container .main-nav {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-nav .item {
+  margin-left: 76px;
+}
+
+.site-nav .item + .item,
+.contacts .item + .item {
+  margin-left: 40px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--title-text-color);
   font-weight: 500;
+  text-decoration: none;
 }
 
 .contacts .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .site-nav .link:hover,

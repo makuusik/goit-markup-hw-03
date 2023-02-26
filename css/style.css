@@ -258,10 +258,12 @@ body {
   margin-bottom: 0px;
 }
 
-.container .feature {
-  width: 1158;
+.container.features {
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .feature-list {
@@ -273,7 +275,7 @@ body {
 }
 
 .feature-list .item {
-  width: calc((100% - 32px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 /* OUR SERVICES */

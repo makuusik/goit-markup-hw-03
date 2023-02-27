@@ -196,9 +196,14 @@ body {
   display: flex;
 }
 
+.our-work .item {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .our-work .item + .item {
   margin-left: 24px;
 }
+
 /* SECTIONS */
 .section-title.centered {
   margin-top: 0;

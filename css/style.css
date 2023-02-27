@@ -291,11 +291,12 @@ img {
   margin-left: 24px;
 }
 
-.our-team .container {
+.our-team {
   background-color: var(--sec-logo-color);
 }
 
 .team {
+  background-color: var(--white-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }

@@ -37,7 +37,7 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* PAGE HEADER */
@@ -159,10 +159,11 @@ body {
 }
 
 .filters {
-  padding-top: 72px;
-  background-color: tomato;
+  padding-bottom: 72px;
+  padding-top: 96px;
+  /* background-color: tomato; */
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .filters .item + .item {
@@ -292,6 +293,25 @@ body {
 }
 
 /* OUR SERVICES */
+.service-list .item {
+  border-bottom: 1px solid var(--border-color);
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.service-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.service-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .service-list .title {
   margin-top: 32px;
   margin-bottom: 0;
@@ -305,7 +325,7 @@ body {
 
 .service-list p {
   margin-top: 8px;
-  margin-bottom: 0;
+  margin-bottom: 32px;
 }
 
 /* FOOTER */

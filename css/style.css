@@ -336,6 +336,11 @@ img {
   margin-bottom: 48px;
 }
 
+.services {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
 .service-list .item:nth-child(3n) {
   margin-right: 0;
 }

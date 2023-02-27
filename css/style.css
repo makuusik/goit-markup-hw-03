@@ -291,7 +291,7 @@ img {
   margin-left: 24px;
 }
 
-.our-team {
+.our-team .container {
   background-color: var(--sec-logo-color);
 }
 

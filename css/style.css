@@ -46,6 +46,10 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
+img {
+  display: block;
+}
+
 /* LOGO */
 .logo {
   text-decoration: none;
@@ -260,8 +264,8 @@ body {
 
 /* TEAM LIST */
 .team-list .title {
-  margin-top: 32px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -274,7 +278,7 @@ body {
 
 .team-list .text {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -285,6 +289,15 @@ body {
 
 .team-list .item + .item {
   margin-left: 24px;
+}
+
+.our-team {
+  background-color: var(--sec-logo-color);
+}
+
+.team {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* OUR APPROACH */
@@ -337,8 +350,8 @@ body {
 }
 
 .service-list .title {
-  margin-top: 32px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -348,10 +361,15 @@ body {
 }
 
 .service-list p {
-  margin-top: 8px;
-  margin-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+.services {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
 /* FOOTER */
 
 .container .footer-text {

@@ -4,7 +4,7 @@
   --accent-color: #4d5ae5;
   --primary-bg-color: #ffffff;
   --sec-bg-color: #f4f4fd;
-  --header-bg-color: #e7e9fc;
+  --border-color: #e7e9fc;
   --black-color: #000000;
   --white-color: #ffffff;
 }
@@ -35,14 +35,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
 
 /* PAGE HEADER */
 .page-header {
-  outline: 1px solid tomato;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* LOGO */
@@ -139,7 +139,7 @@ body {
 }
 
 /* BUTTONS AND FILTERS-BUTTON */
-.button {
+.header-button {
   display: inline-block;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -158,27 +158,30 @@ body {
   border: 1px solid transparent;
 }
 
+.filters {
+  padding-top: 72px;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+}
+
+.filters .item + .item {
+  margin-left: 24px;
+}
+
 .filters .link {
   display: inline-block;
   color: var(--accent-color);
 
   border-radius: 4px;
   padding: 12px 24px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  text-decoration: none;
   border: none;
   cursor: pointer;
-}
-
-.container .service-list {
-  padding-top: 72px;
-}
-
-.container .filters {
-  padding-top: 96px;
 }
 
 .filters .link:hover,
@@ -234,21 +237,29 @@ body {
 .team-list .title {
   margin-top: 32px;
   margin-bottom: 0;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  text-align: center;
 }
 
 .team-list .text {
+  text-align: center;
   margin-top: 8px;
   margin-bottom: 0;
 }
 
 .team-list {
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
+}
+
+.team-list .item + .item {
+  margin-left: 24px;
 }
 
 /* OUR APPROACH */
@@ -268,13 +279,6 @@ body {
   margin-bottom: 0;
 }
 
-.container.feature {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .feature-list {
   display: flex;
 }
@@ -284,7 +288,7 @@ body {
 }
 
 .feature-list .item {
-  width: calc((100% - 72px) / 4);
+  width: 264px;
 }
 
 /* OUR SERVICES */
@@ -307,6 +311,7 @@ body {
 /* FOOTER */
 
 .container .footer-text {
+  width: 264px;
   margin-top: 16px;
   margin-bottom: 0;
 }
